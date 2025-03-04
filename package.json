@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.12.0",
+    "@headlessui/react": "^2.2.0",
     "@splidejs/react-splide": "github:splidejs/react-splide",
     "@supabase/supabase-js": "^2.49.1",
     "chart.js": "^4.4.8",
@@ -24,7 +25,6 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.2.0",
     "react-scroll": "^1.9.0",
-    "react-slidedown": "^2.4.7",
     "recharts": "^2.15.1"
   },
   "devDependencies": {
@@ -41,5 +41,10 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.12",
     "vite": "^5.4.1"
+  },
+  "resolutions": {
+    "react-slidedown": {
+      "react": "^18.0.0"
+    }
   }
 }
