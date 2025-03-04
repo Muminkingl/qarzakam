@@ -24,6 +24,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ClerkProvider
       publishableKey={publishableKey}
       navigate={(to) => (window.location.href = to)}
+      afterSignInUrl="/dashboard"
+      afterSignUpUrl="/dashboard"
+      signInUrl="/sign-in"
+      signUpUrl="/sign-up"
     >
       <LanguageProvider>
         <Router>
