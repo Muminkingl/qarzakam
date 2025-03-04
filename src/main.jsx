@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { ClerkProvider } from '@clerk/clerk-react';
 import App from './App.jsx';
 import SignIn from './pages/SignIn.jsx';
@@ -9,7 +9,7 @@ import { LanguageProvider } from './constants/LanguageContext';
 import Dashboard from './pages/Dashboard.jsx';
 import Analytics from './pages/Analytics.jsx';
 import Settings from './pages/Settings.jsx';
-import PrivateRoute from './components/PrivateRoute'; // Import PrivateRoute
+import PrivateRoute from './components/PrivateRoute';
 import Error404 from './pages/Error404';
 import './index.css';
 
@@ -19,55 +19,37 @@ if (!publishableKey) {
   throw new Error("Missing Clerk Publishable Key");
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+const ClerkProviderWithRoutes = () => {
+  const navigate = useNavigate();
+
+  return (
     <ClerkProvider
       publishableKey={publishableKey}
-      navigate={(to) => (window.location.href = to)}
+      navigate={(to) => navigate(to)}
       afterSignInUrl="/dashboard"
       afterSignUpUrl="/dashboard"
       signInUrl="/sign-in"
       signUpUrl="/sign-up"
     >
       <LanguageProvider>
-        <Router>
-          <Routes>
-            {/* Public Routes */}
-            <Route path="/" element={<App />} />
-            <Route path="/sign-in/*" element={<SignIn />} />
-            <Route path="/sign-up/*" element={<SignUp />} />
-
-            {/* Protected Routes (wrapped with PrivateRoute) */}
-            <Route
-              path="/dashboard"
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }
-            />
-            <Route
-              path="/analytics"
-              element={
-                <PrivateRoute>
-                  <Analytics />
-                </PrivateRoute>
-              }
-            />
-            <Route
-              path="/settings"
-              element={
-                <PrivateRoute>
-                  <Settings />
-                </PrivateRoute>
-              }
-            />
-
-            {/* 404 Route - Must be last */}
-            <Route path="*" element={<Error404 />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/sign-in/*" element={<SignIn />} />
+          <Route path="/sign-up/*" element={<SignUp />} />
+          <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+          <Route path="/analytics" element={<PrivateRoute><Analytics /></PrivateRoute>} />
+          <Route path="/settings" element={<PrivateRoute><Settings /></PrivateRoute>} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
       </LanguageProvider>
     </ClerkProvider>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Router>
+      <ClerkProviderWithRoutes />
+    </Router>
   </React.StrictMode>
 );
