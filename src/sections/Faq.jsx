@@ -1,9 +1,18 @@
 import { Element } from "react-scroll";
-import { faq } from "../constants/index.jsx";
 import FaqItem from "../components/FaqItem.jsx";
+import { useLanguage } from "../constants/LanguageContext";
 
 const Faq = () => {
-  const halfLength = Math.floor(faq.length / 2);
+  const { t } = useLanguage();
+  
+  // Create FAQ items array from translations
+  const faqItems = Array.from({ length: 9 }, (_, index) => ({
+    id: index.toString(),
+    question: t(`faq_section.questions.${index}.question`),
+    answer: t(`faq_section.questions.${index}.answer`)
+  }));
+
+  const halfLength = Math.floor(faqItems.length / 2);
 
   return (
     <section>
@@ -11,10 +20,10 @@ const Faq = () => {
         <div className="container relative z-2 py-28">
           <div>
             <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
-              Curiosity didn't kill the cat, it gave it answers.
+              {t('faq')}
             </h3>
             <p className="body-1 max-lg:max-w-sm">
-              You've got questions, we've got answers.
+              {t('faq_section.subtitle')}
             </p>
           </div>
 
@@ -28,13 +37,13 @@ const Faq = () => {
             </div>
 
             <div className="relative flex-1 pt-24">
-              {faq.slice(0, halfLength).map((item, index) => (
+              {faqItems.slice(0, halfLength).map((item, index) => (
                 <FaqItem key={item.id} item={item} index={index} />
               ))}
             </div>
 
             <div className="relative flex-1 lg:pt-24">
-              {faq.slice(halfLength).map((item, index) => (
+              {faqItems.slice(halfLength).map((item, index) => (
                 <FaqItem key={item.id} item={item} index={halfLength + index} />
               ))}
             </div>

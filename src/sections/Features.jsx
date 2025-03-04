@@ -1,9 +1,24 @@
 import { Element } from "react-scroll";
-
-import { details, features } from "../constants/index.jsx";
+import { useLanguage } from "../constants/LanguageContext";
+import { useDetails } from "../constants/index.jsx";
 import Button from "../components/Button.jsx";
 
 const Features = () => {
+  const { t } = useLanguage();
+  const details = useDetails();
+  
+  const features = [0, 1].map(index => ({
+    id: index.toString(),
+    icon: `/images/feature-${index + 1}.png`,
+    caption: t(`features_section.items.${index}.caption`),
+    title: t(`features_section.items.${index}.title`),
+    text: t(`features_section.items.${index}.text`),
+    button: {
+      icon: index === 0 ? "/images/magictouch.svg" : "/images/docs.svg",
+      title: t(`features_section.items.${index}.button.title`),
+    },
+  }));
+
   return (
     <section>
       <Element name="features">

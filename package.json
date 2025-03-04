@@ -10,13 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.12.0",
+    "@splidejs/react-splide": "github:splidejs/react-splide",
+    "@supabase/supabase-js": "^2.49.1",
+    "chart.js": "^4.4.8",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.477.0",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.2.0",
     "react-scroll": "^1.9.0",
-    "react-slidedown": "^2.4.7"
+    "react-slidedown": "^2.4.7",
+    "recharts": "^2.15.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

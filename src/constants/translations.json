@@ -1,0 +1,785 @@
+{
+  "en": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "download": {
+      "description": "Say goodbye to paper ledgers and spreadsheets! Our digital loan management system brings your financial tracking into the modern era. Simple, secure, and always accessible through your web browser."
+    },
+    "hero": {
+      "title": "We made it easy",
+      "subtitle": "Transform your loan tracking from messy paperwork into a streamlined digital experience. Perfect for businesses, lenders, and anyone managing multiple loans.",
+      "try_now": "Get Started",
+      "text": "Transform your loan tracking from messy paperwork into a streamlined digital experience. Perfect for businesses, lenders, and anyone managing multiple loans."
+    },
+    "pricing_section": {
+      "title": "Pricing",
+      "free": "Free",
+      "pro": "Pro",
+      "unit": "mo",
+      "get_started": "Get Started",
+      "recommended": "Recommended",
+      "coming_soon": "Coming Soon",
+      "features": {
+        "free": {
+          "1": "Up to 5 loans",
+          "2": "Basic loan tracking",
+          "3": "Email support"
+        },
+        "pro": {
+          "1": "Unlimited loans",
+          "2": "Advanced analytics",
+          "3": "Priority support",
+          "4": "CSV export"
+        }
+      }
+    },
+    "login": "Login",
+    "signup": "Sign Up",
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Personalize your account and manage preferences",
+      "appearance": "Appearance",
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "language": "Language",
+      "data_privacy": "Data & Privacy",
+      "privacy_policy": "Privacy Policy",
+      "export_data": "Export Data",
+      "delete_account": "Delete Account",
+      "save_changes": "Save Changes",
+      "saving": "Saving...",
+      "saveSuccess": "Settings saved successfully!",
+      "saveError": "Failed to save settings. Please try again.",
+      "privacyDesc": "Learn how we handle your data",
+      "exportDesc": "Download all your loan data",
+      "deleteDesc": "Permanently delete your account and data",
+      "deleteTitle": "Delete Account",
+      "deleteWarning": "This action cannot be undone. Please be certain.",
+      "deleteConfirmation": "Type DELETE to confirm",
+      "deleteButton": "Delete Account",
+      "cancelButton": "Cancel",
+      "deleteSuccess": "Account successfully deleted. Redirecting...",
+      "deleteEffects": "What happens when you delete your account:",
+      "deleteEffect1": "All your loan records will be permanently deleted",
+      "deleteEffect2": "Your profile and settings will be removed",
+      "deleteEffect3": "You'll lose access to all services",
+      "deleteEffect4": "This action is immediate and irreversible",
+      "deleteError": "Failed to delete account. Please try again."
+    },
+    "error": {
+      "pageNotFound": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "goBack": "Go Back",
+      "goHome": "Go Home"
+    },
+    "faq_section": {
+      "subtitle": "You've got questions, we've got answers.",
+      "questions": {
+        "0": {
+          "question": "How secure is my loan data?",
+          "answer": "Your loan data is protected with enterprise-grade encryption. We use secure servers and follow strict privacy protocols to ensure your financial information remains confidential and safe."
+        },
+        "1": {
+          "question": "Can I track multiple loans?",
+          "answer": "Yes! Our free plan allows you to track up to 5 loans, while our Pro plan offers unlimited loan tracking. Each loan can be customized with different payment schedules, interest rates, and categories."
+        },
+        "2": {
+          "question": "How do I export my loan data?",
+          "answer": "Pro users can easily export their loan data in CSV format. This feature is perfect for accounting purposes or creating backups. The exported file includes all loan details, payment history, and analytics."
+        },
+        "3": {
+          "question": "Can I set payment reminders?",
+          "answer": "Yes, you can set up email notifications for upcoming payments, due dates, and late payments. This helps you stay on top of your loan obligations and maintain a good payment record."
+        },
+        "4": {
+          "question": "Is there a mobile app available?",
+          "answer": "Currently, we offer a mobile-responsive web application that works great on all devices. We're actively working on native mobile apps for iOS and Android, coming soon!"
+        },
+        "5": {
+          "question": "What happens if I exceed the free plan limit?",
+          "answer": "When you reach the 5-loan limit on the free plan, you'll need to upgrade to our Pro plan to add more loans. Don't worry - all your existing loan data will remain intact during the upgrade."
+        },
+        "6": {
+          "question": "Can I calculate loan interest automatically?",
+          "answer": "Yes! Our system automatically calculates interest based on your loan terms. We support various interest types including fixed, compound, and simple interest calculations."
+        },
+        "7": {
+          "question": "How do I get support if I need help?",
+          "answer": "We offer email support for all users. Pro plan users get priority support with faster response times. Our help center also contains detailed guides and tutorials."
+        },
+        "8": {
+          "question": "Can I share loan details with others?",
+          "answer": "Pro users can share loan details securely with other users, perfect for team collaboration or sharing with accountants. You control exactly what information is shared and with whom."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Trust",
+      "subtitle": "Words from our customers",
+      "items": {
+        "0": {
+          "text": "This loan management system has completely transformed how I handle my business loans. The automatic payment reminders are a lifesaver!",
+          "author": "Rezhan sardar",
+          "position": "Small Business Owner"
+        },
+        "1": {
+          "text": "I was struggling to keep track of multiple student loans, but this platform makes it so easy. The interest calculations are accurate and save me so much time.",
+          "author": "Sam kilter",
+          "position": "Graduate Student"
+        },
+        "2": {
+          "text": "As a financial advisor, I recommend this platform to all my clients. The detailed analytics and reporting features are exactly what they need.",
+          "author": "Michael Chen",
+          "position": "Financial Advisor"
+        },
+        "3": {
+          "text": "The ability to track both personal and business loans in one place is fantastic. The dashboard is intuitive and the export feature is perfect for my accountant.",
+          "author": "Lisa Thompson",
+          "position": "Entrepreneur"
+        }
+      }
+    },
+    "features_section": {
+      "items": {
+        "0": {
+          "caption": "Smart Loan Tracking",
+          "title": "Work smarter not harder",
+          "text": "Say goodbye to spreadsheets and paper records. Our digital platform helps you track all your loans in one place, with automatic calculations and payment schedules that save you hours of work.",
+          "button": {
+            "title": "See How It Works"
+          }
+        },
+        "1": {
+          "caption": "Secure & Reliable",
+          "title": "Your Financial Data, Protected",
+          "text": "We take security seriously. Your loan data is protected with bank-grade encryption, regular backups, and strict access controls. Focus on your business while we keep your information safe.",
+          "button": {
+            "title": "Learn More"
+          }
+        }
+      }
+    },
+    "details_section": {
+      "items": {
+        "0": {
+          "title": "Automatic Interest Calculation"
+        },
+        "1": {
+          "title": "Multi-User Access"
+        },
+        "2": {
+          "title": "Fast Cloud Storage"
+        },
+        "3": {
+          "title": "24/7 Customer Support"
+        }
+      }
+    },
+    "dashboard": {
+      "welcome": "Welcome back, {{name}}!",
+      "overview": "Here's an overview of your loan management",
+      "sidebar": {
+        "loans": "Loans",
+        "analytics": "Analytics",
+        "settings": "Settings",
+        "collapse": "Collapse sidebar",
+        "expand": "Expand sidebar"
+      },
+      "plan": {
+        "free": "🔄 Free Plan",
+        "premium": "✨ Premium Plan",
+        "upgrade": "Upgrade",
+        "unlimited": "Unlimited loans available",
+        "usage": "{{used}} of {{total}} loans used",
+        "loading": "Loading..."
+      },
+      "profile": {
+        "settings": "Settings",
+        "logout": "Logout"
+      }
+    },
+    "loans": {
+      "recent": "Recent Loans",
+      "search": "Search loans...",
+      "new": "New Loan",
+      "empty": {
+        "title": "No loans found",
+        "description": "You haven't created any loans yet. Click the button below to get started.",
+        "action": "Create your first loan"
+      },
+      "table": {
+        "borrower": "Borrower",
+        "amount": "Amount",
+        "startDate": "Start Date",
+        "dueDate": "Due Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "status": {
+        "pending": "Pending",
+        "paid": "Paid",
+        "overdue": "Overdue"
+      }
+    },
+    "modals": {
+      "new": {
+        "title": "New Loan",
+        "tabs": {
+          "borrower": "Borrower",
+          "loan": "Loan",
+          "notes": "Notes"
+        },
+        "borrower": {
+          "title": "Borrower Information",
+          "name": "Full Name",
+          "namePlaceholder": "Enter borrower's full name",
+          "email": "Email",
+          "emailPlaceholder": "Enter borrower's email",
+          "phone": "Phone Number",
+          "phonePlaceholder": "Enter borrower's phone number"
+        },
+        "loan": {
+          "title": "Loan Details",
+          "amount": "Amount",
+          "amountPlaceholder": "Enter loan amount",
+          "currency": "Currency",
+          "startDate": "Start Date",
+          "dueDate": "Due Date"
+        },
+        "notes": {
+          "title": "Notes (Optional)",
+          "placeholder": "Add any additional details about this loan...",
+          "hint": "Use this area for payment terms, interest details, or special conditions",
+          "instructions": "Add any additional notes or instructions"
+        },
+        "limit": {
+          "title": "Loan Limit Reached",
+          "message": "You've reached the maximum number of loans (10) for the free plan.",
+          "action": "Upgrade to Premium"
+        },
+        "buttons": {
+          "next": "Next",
+          "back": "Back",
+          "cancel": "Cancel",
+          "create": "Create Loan",
+          "creating": "Creating..."
+        }
+      },
+      "edit": {
+        "title": "Edit Loan",
+        "borrower": {
+          "title": "Borrower Information",
+          "name": "Full Name",
+          "email": "Email"
+        },
+        "loan": {
+          "title": "Loan Details",
+           "amountPlaceholder": "Enter loan amount",
+          "amount": "Amount",
+          "currency": "Currency",
+          "startDate": "Start Date",
+          "dueDate": "Due Date",
+          "status": "Status"
+        },
+        "notes": {
+          "title": "Notes",
+          "placeholder": "Add any additional notes about this loan..."
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "save": "Save Changes",
+          "saving": "Saving..."
+        }
+      },
+      "view": {
+        "title": "Loan Details",
+        "borrower": {
+          "title": "Borrower Information",
+          "name": "Name",
+          "email": "Email"
+        },
+        "loan": {
+          "title": "Loan Details",
+          "amount": "Amount",
+          "status": "Status",
+          "startDate": "Start Date",
+          "dueDate": "Due Date"
+        },
+        "timeline": {
+          "title": "Timeline",
+          "created": "Loan Created",
+          "due": "Due Date",
+          "paid": "Paid"
+        },
+        "notes": {
+          "title": "Notes"
+        },
+        "close": "Close"
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "empty": "No notifications",
+      "mark_all": "Mark all as read",
+      "due_today": "Due Today",
+      "upcoming": "Upcoming",
+      "all_up_to_date": "You're all up to date!",
+      "overdue": "Overdue"
+    },
+    "analytics": {
+      "title": "Loan Analytics",
+      "timeRanges": {
+        "1m": "1m",
+        "3m": "3m",
+        "6m": "6m",
+        "1y": "1y",
+        "all": "All Time"
+      },
+      "overview": {
+        "totalLoans": {
+          "title": "Total Loans",
+          "subtitle": "Active and completed"
+        },
+        "totalAmount": {
+          "title": "Total Amount",
+          "subtitle": "Money you've loaned to others"
+        },
+        "repaymentRate": {
+          "title": "Repayment Rate",
+          "subtitle": "Of loans fully repaid"
+        }
+      },
+      "charts": {
+        "monthlyActivity": {
+          "title": "Monthly Loan Activity",
+          "noData": "No data available for the selected period",
+          "sent": "Sent",
+          "received": "Received",
+          "amount": "Amount"
+        },
+        "status": {
+          "title": "Loan Status Distribution",
+          "percentage": "Percentage"
+        },
+        "performance": {
+          "title": "Repayment Performance",
+          "rate": "Repayment Rate",
+          "status": {
+            "paid": "Paid Loans",
+            "active": "Active Loans",
+            "overdue": "Overdue"
+          }
+        }
+      },
+      "upcoming": {
+        "title": "Upcoming Due Dates",
+        "empty": {
+          "title": "No upcoming payments",
+          "subtitle": "All your loans are paid or you have no active loans"
+        },
+        "due": "Due",
+        "status": {
+          "overdue": "This user didn't return on time",
+          "paid": "This user returned the money",
+          "active": "This user must return money"
+        },
+        "type": {
+          "sent": "Money you loaned",
+          "received": "You need to repay"
+        }
+      }
+    }
+  },
+  "kd": {
+    "features": "تایبتمەندیەکان",
+    "pricing": "نرخەکان",
+    "faq": "پرسیارە دووبارەکان",
+    "download": {
+      "description": "ئیتر باوی دەفتەری قەرز نەما، ئێمە بۆمان کردن بە دیجیتاڵ، ئێستا هەموو قەرزەکانت لەگەڵ ئێمە رێکبخە"
+    },
+    "hero": {
+      "title": "ئێمە بۆمان ئاسان کردن",
+      "subtitle": "بەدواداچوونی قەرزەکانت لە کاغەزی شپرزەوە بگۆڕە بۆ ئەزموونێکی دیجیتاڵی ڕێکخراو. گونجاوە بۆ کۆمپانیاکان، قەرزدەران و هەر کەسێک چەندین قەرز بەڕێوە دەبات.",
+      "try_now": "دەست پێ بکە",
+      "text": "بەدواداچوونی قەرزەکانت لە کاغەزی شپرزەوە بگۆڕە بۆ ئەزموونێکی دیجیتاڵی ڕێکخراو. گونجاوە بۆ کۆمپانیاکان، قەرزدەران و هەر کەسێک چەندین قەرز بەڕێوە دەبات."
+    },
+    "pricing_section": {
+      "title": "نرخەکان",
+      "free": "خۆڕایی",
+      "pro": "نایاب",
+      "unit": "مانگانە",
+      "get_started": "دەست پێ بکە",
+      "recommended": "پێشنیارکراو",
+      "coming_soon": "بەم زووانە",
+      "features": {
+        "free": {
+          "1": "تا ٥ قەرز",
+          "2": "بەدواداچوونی سەرەتایی",
+          "3": "پشتگیری ئیمەیڵ"
+        },
+        "pro": {
+          "1": "قەرزی نا سنووردار",
+          "2": "شیکاری پێشکەوتوو",
+          "3": "پشتگیری تایبەت",
+          "4": "هەناردەکردنی CSV"
+        }
+      }
+    },
+    "login": "چوونەژوورەوە",
+    "signup": "خۆتۆمارکردن",
+    "settings": {
+      "title": "ڕێکخستنەکان",
+      "subtitle": "کەسایەتی کردنی هەژمارەکەت و بەڕێوەبردنی پێشبژاردەکان",
+      "appearance": "ڕووکار",
+      "theme": "ڕووکار",
+      "light": "ڕووناک",
+      "dark": "تاریک",
+      "language": "زمان",
+      "data_privacy": "داتا و تایبەتمەندی",
+      "privacy_policy": "سیاسەتی تایبەتمەندی",
+      "export_data": "هەناردنی داتا",
+      "delete_account": "سڕینەوەی هەژمار",
+      "save_changes": "پاشەکەوتکردنی گۆڕانکاریەکان",
+      "saving": "پاشەکەوت دەکرێت...",
+      "saveSuccess": "ڕێکخستنەکان بە سەرکەوتوویی پاشەکەوت کران!",
+      "saveError": "پاشەکەوتکردنی ڕێکخستنەکان سەرکەوتوو نەبوو. تکایە دووبارە هەوڵ بدەرەوە.",
+      "privacyDesc": "بزانە چۆن مامەڵە لەگەڵ داتاکانت دەکەین",
+      "exportDesc": "داگرتنی هەموو داتای قەرزەکانت",
+      "deleteDesc": "سڕینەوەی هەمیشەیی هەژمار و داتاکانت",
+      "deleteTitle": "سڕینەوەی هەژمار",
+      "deleteWarning": "ئەم کردارە ناتوانرێت پاشگەز بکرێتەوە. تکایە دڵنیابە.",
+      "deleteConfirmation": " DELETE ئەم وشەیە بنووسە بۆ دڵنیابونەوە ",
+      "deleteButton": "سڕینەوەی هەژمار",
+      "cancelButton": "هەڵوەشاندنەوە",
+      "deleteSuccess": "هەژمارەکە بە سەرکەوتوویی سڕایەوە. دەگوازرێیتەوە...",
+      "deleteEffects": "ئەمانە ڕوودەدەن کاتێک هەژمارەکەت دەسڕیتەوە:",
+      "deleteEffect1": "هەموو تۆمارەکانی قەرزەکانت بە تەواوی دەسڕدرێنەوە",
+      "deleteEffect2": "پڕۆفایل و ڕێکخستنەکانت لادەبرێن",
+      "deleteEffect3": "دەستت بە هیچ خزمەتگوزاریەک ناگات",
+      "deleteEffect4": "ئەم کردارە دەستبەجێیە و ناگەڕێتەوە",
+      "deleteError": "سڕینەوەی هەژمارەکە سەرکەوتوو نەبوو. تکایە دووبارە هەوڵ بدەرەوە."
+    },
+    "error": {
+      "pageNotFound": " نەدۆزرایەوە",
+      "description": "ئەو پەڕەیەی بەدوایدا دەگەڕێیت بوونی نییە یان گواستراوەتەوە.",
+      "goBack": "گەڕانەوە",
+      "goHome": "بۆ سەرەتا"
+    },
+    "faq_section": {
+      "subtitle": "پرسیارت هەیە، وەڵاممان هەیە.",
+      "questions": {
+        "0": {
+          "question": "داتای قەرزەکانم چەند پارێزراوە؟",
+          "answer": "داتای قەرزەکانت بە ئینکریپشنی ئاستی-کۆمپانیا پارێزراوە. ئێمە سێرڤەری پارێزراو و پرۆتۆکۆڵی تایبەتی پاراستنی نهێنی بەکاردەهێنین بۆ دڵنیابوون لەوەی کە زانیارییە داراییەکانت نهێنی و پارێزراو دەمێننەوە."
+        },
+        "1": {
+          "question": "دەتوانم چەندین قەرز تۆمار بکەم؟",
+          "answer": "بەڵێ! پلانی بەخۆڕاییمان ڕێگەت پێدەدات تا ٥ قەرز تۆمار بکەیت، لەکاتێکدا پلانی پرۆ ژمارەیەکی نا سنووردار لە قەرز پێشکەش دەکات. هەر قەرزێک دەکرێت بە خشتەی جیاوازی پارەدانەوە، ڕێژەی سوو و پۆلێنەکان ڕێکبخرێت."
+        },
+        "2": {
+          "question": " دەتوانم داتای قەرزەکانم دایبەزێنم؟",
+          "answer": " بەدڵنیایەوە، دەتوانیت کۆپیەک لە داتای قەرزەکانت بەشیوەیەکی ئۆفڵاین دابەزێنیت "
+        },
+        "3": {
+          "question": "دەتوانم بیرخەرەوەی پارەدان دابنێم؟",
+          "answer": "بەڵێ، دەتوانیت ئاگادارکردنەوەی ئیمەیڵ بۆ پارەدانی داهاتوو، ڕۆژی دیاریکراو و دواکەوتن ڕێک بخەیت. ئەمە یارمەتیت دەدات لە بەدواداچوونی پابەندبوونەکانت.بەمزوانە"
+        },
+        "4": {
+          "question": "ئایا ئەپڵیکەیشنی مۆبایل هەیە؟",
+          "answer": "لە ئێستادا، وێبسایتێکی گونجاو بۆ مۆبایل پێشکەش دەکەین کە لەسەر هەموو ئامێرەکان بەشێوەیەکی باش کار دەکات.   iOS و Android کار دەکەین، و بە زووانە بەردەست دەبێت! لە"
+        },
+        "5": {
+          "question": "چی ڕوودەدات ئەگەر سنووری پلانی خۆڕاییم تێپەڕاند؟",
+          "answer": "کاتێک دەگەیتە سنووری ٥ قەرز لە پلانی خۆڕایی، پێویستە بۆ پلانی پرۆ بەرزبکرێیتەوە بۆ زیادکردنی قەرزی زیاتر. نیگەران مەبە - هەموو داتاکانت وەک خۆی دەمێنێتەوە."
+        },
+        "6": {
+          "question": "دەتوانم سوودی قەرز بە شێوەی ئۆتۆماتیکی ژمارە بکەم؟",
+          "answer": "بەڵێ! سیستەمەکەمان بە شێوەی ئۆتۆماتیکی سوود دەژمێرێت بەپێی مەرجەکانی قەرزەکە. پشتگیری جۆرە جیاوازەکانی سوود دەکەین وەک سوودی جێگیر و سوودی لێکدراو."
+        },
+        "7": {
+          "question": "چۆن پشتگیری وەردەگرم ئەگەر پێویستم بە یارمەتی بوو؟",
+          "answer": "ئەگەر هەر یارمەتێیەک یان کێشەیەکەت هەیە، دەتوانیت پەیوەندیمان پێوە بکەیت لە ڕێگەی ئیمەیڵ یان تۆڕە کۆمەڵایەتیەکانمان."
+        },
+        "8": {
+          "question": "دەتوانم وردەکاری قەرزەکانم لەگەڵ کەسانی تر هاوبەش بکەم؟",
+          "answer": "بەکارهێنەرانی پرۆ دەتوانن وردەکاری قەرزەکان بە شێوەیەکی پارێزراو لەگەڵ بەکارهێنەرانی تر هاوبەش بکەن، و تۆ کۆنترۆڵی ئەوە دەکەیت کە کام زانیاری لەگەڵ کێ هاوبەش دەکرێت. ئەم تایبەتمەندییە لە پڕۆسەی گۆڕانکاری دا هەیە و بزووترین کات بەردەست دەبێت!"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "متمانە",
+      "subtitle": "وتەی بەکارهێنەرانمان",
+      "items": {
+        "0": {
+          "text": "ئەم سیستەمی بەڕێوەبردنی قەرزە بە تەواوی گۆڕانکاری لە چۆنیەتی مامەڵەکردنم لەگەڵ قەرزەکانی کارەکەم کردووە. بیرخەرەوەی پارەدانی خۆکار ژیانی ڕزگار کردووم!",
+          "author": "ڕێژان سەردار",
+          "position": "خاوەنی بزنسی بچووک"
+        },
+        "1": {
+          "text": "کێشەم هەبوو لە بەدواداچوونی چەندین قەرزی خوێندن، بەڵام ئەم پلاتفۆرمە زۆر ئاسانی کردووە. ژماردنی سوودەکان دروستن و کاتێکی زۆرم بۆ دەگەڕێننەوە.",
+          "author": "سام کیتلێر",
+          "position": "خوێندکاری باڵا"
+        },
+        "2": {
+          "text": "وەک ڕاوێژکارێکی دارایی، ئەم پلاتفۆرمە بۆ هەموو موشتەریەکانم پێشنیار دەکەم. شیکاری و ڕاپۆرتە وردەکان ئەوەن کە پێویستیان پێیەتی.",
+          "author": "مایکڵ چێن",
+          "position": "ڕاوێژکاری دارایی"
+        },
+        "3": {
+          "text": "توانای بەدواداچوونی قەرزی کەسی و بازرگانی لە یەک شوێن زۆر سەرنجڕاکێشە. داشبۆردەکە ئاسانە و تایبەتمەندی هەناردەکردن بۆ ژمێریارەکەم تەواو گونجاوە.",
+          "author": "لیزا تۆمپسۆن",
+          "position": "کارئەفرین"
+        }
+      }
+    },
+    "features_section": {
+      "items": {
+        "0": {
+          "caption": "بەدواداچوونی ژیرانەی قەرز",
+          "title": "زیرەکتر کار بکە نەک سەختتر",
+          "text": "ماڵئاوا لە ئێکسێڵ و تۆماری کاغەز. پلاتفۆرمە دیجیتاڵەکەمان یارمەتیت دەدات هەموو قەرزەکانت لە یەک شوێن بەدواداچوونی بۆ بکەیت، لەگەڵ ژماردنی خۆکار و خشتەی پارەدانەوە کە کاتژمێرێکی زۆرت بۆ دەگەڕێننەوە.",
+          "button": {
+            "title": "بزانە چۆن کار دەکات"
+          }
+        },
+        "1": {
+          "caption": "پارێزراو و متمانەپێکراو",
+          "title": "داتا داراییەکانت، پارێزراوە",
+          "text": "ئێمە بە جددی مامەڵە لەگەڵ پاراستن دەکەین. داتای قەرزەکانت بە ئینکریپشنی ئاستی-بانک، باکئەپی بەردەوام و کۆنترۆڵی توندی دەستپێگەیشتن پارێزراوە. تەرکیز لەسەر کارەکەت بکە و ئێمە زانیاریەکانت پارێزراو دەکەین.",
+          "button": {
+            "title": "زیاتر بزانە"
+          }
+        }
+      }
+    },
+    "details_section": {
+      "items": {
+        "0": {
+          "title": "بەکارهێنانی ژیری دەستکرد"
+        },
+        "1": {
+          "title": "کاتت بۆ دەگەڕینینەوە"
+        },
+        "2": {
+          "title": "بوونی بەهێزترین کڵاود"
+        },
+        "3": {
+          "title": "پشتگیری ٢٤/٧"
+        }
+      }
+    },
+    "dashboard": {
+      "welcome": "بەخێربێیتەوە, {{name}}!",
+      "overview": "ئەمە تێڕوانینێکی گشتی قەرزەکانتە",
+      "sidebar": {
+        "loans": "قەرزەکان",
+        "analytics": "شیکاری",
+        "settings": "ڕێکخستنەکان",
+        "collapse": "داخستنی لیستی لاتەنیشت",
+        "expand": "کردنەوەی لیستی لاتەنیشت"
+      },
+      "plan": {
+        "free": "🔄 پلانی بەخۆڕایی",
+        "premium": "✨ پلانی پرێمیەم",
+        "upgrade": "بەرزکردنەوە",
+        "unlimited": "قەرزی نا سنووردار بەردەستە",
+        "usage": "{{used}} لە {{total}} قەرز بەکارهاتووە",
+        "loading": "چاوەڕێبە..."
+      },
+      "profile": {
+        "settings": "ڕێکخستنەکان",
+        "logout": "چوونەدەرەوە"
+      }
+    },
+    "loans": {
+      "recent": "قەرزە نوێیەکان",
+      "search": "گەڕان بەدوای قەرز...",
+      "new": "قەرزی نوێ",
+      "empty": {
+        "title": "هیچ قەرزێک نەدۆزرایەوە",
+        "description": "تۆ هێشتا هیچ قەرزێکت دروست نەکردووە. کلیک لەسەر دوگمەکەی خوارەوە بکە بۆ دەستپێکردن.",
+        "action": "یەکەم قەرزت دروست بکە"
+      },
+      "table": {
+        "borrower": "قەرزار",
+        "amount": "بڕ",
+        "startDate": "بەرواری دەستپێک",
+        "dueDate": "بەرواری کۆتایی",
+        "status": "دۆخ",
+        "actions": "کردارەکان"
+      },
+      "status": {
+        "pending": "چاوەڕوان",
+        "paid": "دراوە",
+        "overdue": "دواکەوتوو"
+      }
+    },
+    "modals": {
+      "new": {
+        "title": "قەرزی نوێ",
+        "tabs": {
+          "borrower": "قەرزار",
+          "loan": "قەرز",
+          "notes": "تێبینیەکان"
+        },
+        "borrower": {
+          "title": "زانیاری قەرزار",
+          "name": "ناوی تەواو",
+          "namePlaceholder": "ناوی تەواوی قەرزار بنووسە",
+          "email": "ئیمەیڵ",
+          "emailPlaceholder": "ئیمەیڵی قەرزار بنووسە",
+          "phone": "ژمارەی مۆبایلی قەرزار بنووسە",
+          "phonePlaceholder": "+964 (750) 123-4567"
+        },
+        "loan": {
+          "title": "وردەکاری قەرز",
+          "amount": "بڕ",
+          "amountPlaceholder": "بڕی قەرزەکە بنووسە",
+          "currency": "دراو",
+          "startDate": "بەرواری دەستپێک",
+          "dueDate": "بەرواری کۆتایی"
+        },
+        "notes": {
+          "title": "تێبینیەکان",
+          "placeholder": "هەر تێبینیەکی زیادە سەبارەت بەم قەرزە زیاد بکە...",
+          "hint": "هەر تێبینی یان ڕێنماییەک زیاد بکە",
+          "instructions": "هەر تێبینی یان ڕێنماییەک ئەتوانیت لێرە بینووسی"
+        },
+        "limit": {
+          "title": "سنووری قەرز تەواو بووە",
+          "message": "تۆ گەیشتوویتە زۆرترین ژمارەی قەرز (10) بۆ پلانی بەخۆڕایی.",
+          "action": "بەرزکردنەوە بۆ پرێمیەم"
+        },
+        "buttons": {
+          "cancel": "هەڵوەشاندنەوە",
+          "create": "دروستکردنی قەرز",
+          "creating": "دروست دەکرێت..."
+        }
+      },
+      "edit": {
+        "title": "دەستکاری قەرز",
+        "borrower": {
+          "title": "زانیاری قەرزار",
+          "name": "ناوی تەواو",
+          "email": "ئیمەیڵ"
+        },
+        "loan": {
+          "title": "وردەکاری قەرز",
+          "amount": "بڕ",
+          "currency": "دراو",
+          "startDate": "بەرواری دەستپێک",
+          "dueDate": "بەرواری کۆتایی",
+          "status": "دۆخ"
+        },
+        "notes": {
+          "title": "تێبینیەکان",
+          "placeholder": "هەر تێبینیەکی زیادە سەبارەت بەم قەرزە زیاد بکە..."
+        },
+        "buttons": {
+          "cancel": "هەڵوەشاندنەوە",
+          "save": "پاشەکەوتکردنی گۆڕانکاریەکان",
+          "saving": "پاشەکەوت دەکرێت..."
+        }
+      },
+      "view": {
+        "title": "وردەکاری قەرز",
+        "borrower": {
+          "title": "زانیاری قەرزار",
+          "name": "ناو",
+          "email": "ئیمەیڵ"
+        },
+        "loan": {
+          "title": "وردەکاری قەرز",
+          "amount": "بڕ",
+          "status": "دۆخ",
+          "startDate": "بەرواری دەستپێک",
+          "dueDate": "بەرواری کۆتایی"
+        },
+        "timeline": {
+          "title": "کات",
+          "created": "قەرز دروستکرا",
+          "due": "بەرواری کۆتایی",
+          "paid": "دراوە"
+        },
+        "notes": {
+          "title": "تێبینیەکان"
+        },
+        "close": "داخستن"
+      }
+    },
+    "notifications": {
+      "title": "ئاگادارکردنەوەکان",
+      "empty": "هیچ ئاگادارکردنەوەیەک نیە",
+      "mark_all": "هەموویان وەک خوێندراوە دیاری بکە",
+      "due_today": "ئەمڕۆ کۆتایی دێت",
+      "upcoming": "داهاتوو",
+      "all_up_to_date": "هەموو شتێک نوێیە!",
+      "overdue": "دواکەوتوو"
+    },
+    "analytics": {
+      "title": "شیکاری قەرز",
+      "timeRanges": {
+        "1m": "١م",
+        "3m": "٣م",
+        "6m": "٦م",
+        "1y": "١س",
+        "all": "هەموو کات"
+      },
+      "overview": {
+        "totalLoans": {
+          "title": "کۆی قەرزەکان",
+          "subtitle": "چالاک و تەواوبوو"
+        },
+        "totalAmount": {
+          "title": "کۆی بڕ",
+          "subtitle": "ئەو پارەیەی بە قەرز دراوە"
+        },
+        "repaymentRate": {
+          "title": "ڕێژەی گەڕانەوە",
+          "subtitle": "قەرزی بە تەواوی دراوەتەوە"
+        }
+      },
+      "charts": {
+        "monthlyActivity": {
+          "title": "چالاکی مانگانەی قەرز",
+          "noData": "هیچ داتایەک بەردەست نیە بۆ ماوەی دیاریکراو",
+          "sent": "نێردراو",
+          "received": "وەرگیراو",
+          "amount": "بڕ"
+        },
+        "status": {
+          "title": "دابەشکردنی دۆخی قەرز",
+          "percentage": "ڕێژە"
+        },
+        "performance": {
+          "title": "کارایی گەڕانەوە",
+          "rate": "ڕێژەی گەڕانەوە",
+          "status": {
+            "paid": "قەرزی دراوە",
+            "active": "قەرزی چالاک",
+            "overdue": "دواکەوتوو"
+          }
+        }
+      },
+      "upcoming": {
+        "title": "بەرواری داهاتوو",
+        "empty": {
+          "title": "هیچ پارەدانەوەیەکی داهاتوو نیە",
+          "subtitle": "هەموو قەرزەکان دراونەتەوە یان هیچ قەرزێکی چالاکت نیە"
+        },
+        "due": "کۆتایی",
+        "status": {
+          "overdue": "ئەم بەکارهێنەرە لە کاتی خۆیدا نەیگەڕاندەوە",
+          "paid": "ئەم بەکارهێنەرە پارەکەی گەڕاندەوە",
+          "active": "ئەم بەکارهێنەرە دەبێت پارەکە بگەڕێنێتەوە"
+        },
+        "type": {
+          "sent": "پارەی قەرزدراو",
+          "received": "پێویستە بیگەڕێنیتەوە"
+        }
+      }
+    }
+  }
+}

@@ -28,6 +28,67 @@
   input {
     @apply tracking-[-0.03em];
   }
+
+  :root {
+    /* Dark theme (default) */
+    --bg-s1: #080d27;
+    --bg-s2: #0c1838;
+    --bg-s3: #162561;
+    --bg-s4: #253575;
+    --bg-s5: #334679;
+    
+    --text-p1: #2ef2ff;
+    --text-p2: #c4cbf5;
+    --text-p3: #8f9bb7;
+    --text-p4: #f8f9fa;
+    --text-p5: #ffffff;
+  }
+
+  :root.light-mode {
+    /* Light theme */
+    --bg-s1: #ffffff;
+    --bg-s2: #f8f9fa;
+    --bg-s3: #e9ecef;
+    --bg-s4: #dee2e6;
+    --bg-s5: #ced4da;
+    
+    --text-p1: #0c1838;
+    --text-p2: #253575;
+    --text-p3: #334679;
+    --text-p4: #162561;
+    --text-p5: #080d27;
+  }
+
+  /* Update existing color classes to use CSS variables */
+  .bg-s1 { background-color: var(--bg-s1); }
+  .bg-s2 { background-color: var(--bg-s2); }
+  .bg-s3 { background-color: var(--bg-s3); }
+  .bg-s4 { background-color: var(--bg-s4); }
+  .bg-s5 { background-color: var(--bg-s5); }
+  
+  .text-p1 { color: var(--text-p1); }
+  .text-p2 { color: var(--text-p2); }
+  .text-p3 { color: var(--text-p3); }
+  .text-p4 { color: var(--text-p4); }
+  .text-p5 { color: var(--text-p5); }
+
+  /* Update gradients to use CSS variables */
+  .g4 {
+    background: linear-gradient(var(--bg-s3), var(--bg-s4));
+  }
+
+  .g5 {
+    background: linear-gradient(var(--bg-s4), var(--bg-s5));
+  }
+
+  .g7 {
+    background: linear-gradient(var(--bg-s2), var(--bg-s3));
+  }
+
+  /* Add transition for smooth theme switching */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
 
 @layer utilities {
@@ -110,20 +171,8 @@
     background: linear-gradient(#3c52d9, #0c1838);
   }
 
-  .g4 {
-    background: linear-gradient(#253575, #162561);
-  }
-
-  .g5 {
-    background: linear-gradient(#334679, #162561);
-  }
-
   .g6 {
     background: linear-gradient(#334679, #0c1838);
-  }
-
-  .g7 {
-    background: linear-gradient(#1b275a, #0e1434);
   }
 
   .g8 {

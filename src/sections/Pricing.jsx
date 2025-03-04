@@ -1,162 +1,101 @@
 import { Element } from "react-scroll";
-import { useState } from "react";
-import clsx from "clsx";
-import CountUp from "react-countup";
-import { plans } from "../constants/index.jsx";
+import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../constants/LanguageContext";
 import Button from "../components/Button.jsx";
 
 const Pricing = () => {
-  const [monthly, setMonthly] = useState(false);
+  const { t } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleFreePlanClick = () => {
+    navigate('/dashboard');
+  };
 
   return (
-    <section>
+    <section className="py-32 max-lg:py-24 max-md:py-16">
       <Element name="pricing">
         <div className="container">
-          <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
-            <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
-              Flexible pricing for teams of all sizes
-            </h3>
+          <h2 className="h2 text-center text-p4 mb-16">
+            {t("pricing_section.title")}
+          </h2>
 
-            <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
-              <button
-                className={clsx("pricing-head_btn", monthly && "text-p4")}
-                onClick={() => setMonthly(true)}
-              >
-                Monthly
-              </button>
-              <button
-                className={clsx("pricing-head_btn", !monthly && "text-p4")}
-                onClick={() => setMonthly(false)}
-              >
-                Annual
-              </button>
-
-              <div
-                className={clsx(
-                  "g4 rounded-14 before:h-100 pricing-head_btn_before absolute left-2 top-2 h-[calc(100%-16px)] w-[calc(50%-8px)] overflow-hidden shadow-400 transition-transform duration-500",
-                  !monthly && "translate-x-full",
-                )}
-              />
-            </div>
-
-            <div className="pricing-bg">
-              <img
-                src="/images/bg-outlines.svg"
-                width={960}
-                height={380}
-                alt="outline"
-                className="relative z-2"
-              />
-              <img
-                src="/images/bg-outlines-fill.png"
-                width={960}
-                height={380}
-                alt="outline"
-                className="absolute inset-0 opacity-5 mix-blend-soft-light"
-              />
-            </div>
-          </div>
-
-          {/*  pricing section*/}
-          <div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
-            {plans.map((plan, index) => (
-              <div
-                key={plan.id}
-                className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]"
-              >
-                {index === 1 && (
-                  <div className="g4 absolute h-330 left-0 right-0 top-0 z-1 rounded-tl-3xl rounded-tr-3xl" />
-                )}
-
-                <div
-                  className={clsx(
-                    "absolute left-0 right-0 z-2 flex items-center justify-center",
-                    index === 1 ? "-top-6" : "-top-6 xl:-top-11",
-                  )}
-                >
-                  <img
-                    src={plan.logo}
-                    alt={plan.title}
-                    className={clsx(
-                      "object-contain drop-shadow-2xl",
-                      index === 1 ? "size-[120px]" : "size-[88px]",
-                    )}
-                  />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Free Plan */}
+            <div className="relative rounded-[2.5rem] p-8 border-2 border-s4/25 bg-s2/50">
+              <div className="text-center mb-8">
+                <h3 className="h4 text-p4 mb-4">{t("pricing_section.free")}</h3>
+                <div className="flex justify-center items-baseline gap-1">
+                  <span className="h3 text-p4">$0</span>
+                  <span className="text-p3">/{t("pricing_section.unit")}</span>
                 </div>
-
-                <div
-                  className={clsx(
-                    "relative flex flex-col items-center",
-                    index === 1 ? "pt-24" : "pt-12",
-                  )}
-                >
-                  <div
-                    className={clsx(
-                      "small-2 rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase",
-                      index === 1 ? "border-p3 text-p3" : "border-p1 text-p1",
-                    )}
-                  >
-                    {plan.title}
-                  </div>
-
-                  <div className="relative z-2 flex items-center justify-center">
-                    <div
-                      className={clsx(
-                        "h-num flex items-start",
-                        index === 1 ? "text-p3" : "text-p4",
-                      )}
-                    >
-                      ${" "}
-                      <CountUp
-                        start={plan.priceMonthly}
-                        end={monthly ? plan.priceMonthly : plan.priceYearly}
-                        duration={0.4}
-                        useEasing={false}
-                        preserveValue
-                      />
-                    </div>
-                    <div className="small-1 relative top-3 ml-1 uppercase">
-                      / mo
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  className={clsx(
-                    "body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4",
-                    index === 1 && "border-b",
-                  )}
-                >
-                  {plan.caption}
-                </div>
-
-                <ul className="mx-auto space-y-4 xl:px-7">
-                  {plan.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="relative flex items-center gap-5"
-                    >
-                      <img
-                        src={"/images/check.png"}
-                        alt="check"
-                        className="size-10 object-contain"
-                      />
-                      <p className="flex-1">{feature}</p>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-10 flex w-full justify-center">
-                  <Button icon={plan.icon}>Get Started</Button>
-                </div>
-
-                {index === 1 && (
-                  <p className="small-compact mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
-                    Limited time offer
-                  </p>
-                )}
               </div>
-            ))}
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.free.1")}
+                </li>
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.free.2")}
+                </li>
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.free.3")}
+                </li>
+              </ul>
+
+              <Button
+                containerClassName="w-full"
+                className="w-full justify-center"
+                variant="outline"
+                onClick={handleFreePlanClick}
+              >
+                {t("pricing_section.get_started")}
+              </Button>
+            </div>
+
+            {/* Pro Plan */}
+            <div className="relative rounded-[2.5rem] p-8 border-2 border-p1 bg-s2 before:absolute before:inset-0.5 before:rounded-[2.5rem] before:bg-gradient-to-b before:from-p1/25 before:to-transparent before:pointer-events-none">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-p1 to-p2 text-s1 text-sm font-semibold">
+                {t("pricing_section.recommended")}
+              </div>
+
+              <div className="text-center mb-8">
+                <h3 className="h4 text-p4 mb-4">{t("pricing_section.pro")}</h3>
+                <div className="flex justify-center items-baseline gap-1">
+                  <span className="h3 text-p4">$15</span>
+                  <span className="text-p3">/{t("pricing_section.unit")}</span>
+                </div>
+              </div>
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.pro.1")}
+                </li>
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.pro.2")}
+                </li>
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.pro.3")}
+                </li>
+                <li className="flex items-center gap-3 text-p4">
+                  <img src="/images/check.svg" alt="check" className="w-6 h-6" />
+                  {t("pricing_section.features.pro.4")}
+                </li>
+              </ul>
+
+              <Button
+                containerClassName="w-full"
+                className="w-full justify-center cursor-not-allowed opacity-75"
+                disabled
+              >
+                {t("pricing_section.coming_soon")}
+              </Button>
+            </div>
           </div>
         </div>
       </Element>
