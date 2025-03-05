@@ -2,10 +2,13 @@ import { Element } from "react-scroll";
 import { useLanguage } from "../constants/LanguageContext";
 import { useDetails } from "../constants/index.jsx";
 import Button from "../components/Button.jsx";
+import { useState } from 'react';
+import VideoModal from '../components/VideoModal';
 
 const Features = () => {
   const { t } = useLanguage();
   const details = useDetails();
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   
   const features = [0, 1].map(index => ({
     id: index.toString(),
@@ -46,7 +49,9 @@ const Features = () => {
                   {title}
                 </h2>
                 <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">{text}</p>
-                <Button icon={button.icon}>{button.title}</Button>
+                <Button icon={button.icon} onClick={() => setIsVideoModalOpen(true)}>
+                  {button.title}
+                </Button>
               </div>
             ))}
 
@@ -74,6 +79,10 @@ const Features = () => {
           </div>
         </div>
       </Element>
+      <VideoModal 
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+      />
     </section>
   );
 };
